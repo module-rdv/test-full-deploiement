@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Calendar, Clock, MapPin, Phone, Mail, User, Building, Globe, ChevronLeft, ChevronRight, Check, AlertCircle, Loader2 } from 'lucide-react';
+import Navigation from '@/components/Navigation';
 import ServiceSelection from './ServiceSelection';
 import TimeSlotSelection from './TimeSlotSelection';
 import ClientInformation from './ClientInformation';
@@ -239,10 +240,12 @@ const AppointmentBooking: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#0A0A0B] text-white">
+      <Navigation />
+      
       <div className="container mx-auto px-4 py-8">
         
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 mt-20">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Prendre <span className="gradient-text">Rendez-vous</span>
           </h1>
